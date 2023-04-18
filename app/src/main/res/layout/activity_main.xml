@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#120C0C"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_dangnhap"
+        android:layout_width="408dp"
+        android:layout_height="53dp"
+        android:gravity="center"
+        android:text="Đăng nhập"
+        android:textColor="#CF1717"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/username1"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:text=""
+        android:hint=" Nhập tài khoản..."
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_dangnhap"
+        app:layout_constraintVertical_bias="0.314" />
+
+    <EditText
+        android:id="@+id/password1"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edit_text_bg"
+        android:ems="10"
+        android:hint=" Nhập mật khẩu..."
+        android:inputType="textPassword"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/username1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.462" />
+
+    <Button
+        android:id="@+id/btnsignin1"
+        android:layout_width="275dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_bg"
+        android:text="Đăng nhập"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.41"
+        app:layout_constraintStart_toStartOf="@+id/username1"
+        app:layout_constraintTop_toBottomOf="@+id/password1"
+        app:layout_constraintVertical_bias="0.073" />
+
+    <Button
+        android:id="@+id/btn_dangky"
+        android:layout_width="121dp"
+        android:layout_height="41dp"
+        android:text="Đăng ký"
+        android:textColor="#C02A2A"
+        app:backgroundTint="#090707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnsignin1"
+        app:layout_constraintVertical_bias="0.119" />
+
+    <TextView
+        android:id="@+id/txt_Taikhoan"
+        android:layout_width="154dp"
+        android:layout_height="28dp"
+        android:background="@color/black"
+        android:gravity="left"
+        android:text="Tài khoản:"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/username1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/username1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951" />
+
+    <TextView
+        android:id="@+id/txt_Matkhau"
+        android:layout_width="154dp"
+        android:layout_height="28dp"
+        android:layout_marginBottom="13dp"
+        android:background="@color/black"
+        android:gravity="left"
+        android:text="Mật khẩu:"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/password1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/username1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
